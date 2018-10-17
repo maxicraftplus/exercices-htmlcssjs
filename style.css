@@ -1,0 +1,35 @@
+#sidebar a {
+    position: absolute;
+    left: -130px;
+    transition: 300ms;
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#sidebar a:hover {
+    left: 0;
+}
+
+#accueil {
+    top: 20px;
+    background-color: aqua;
+}
+
+#blog {
+    top: 80px;
+    background-color: red;
+}
+
+#presentation {
+    top: 140px; 
+    background-color: royalblue;
+}
+
+#contact {
+    top: 200px;
+    background-color: darkgoldenrod;
+}
