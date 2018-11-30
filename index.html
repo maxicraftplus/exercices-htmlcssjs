@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Icon bar</title>
+    <title>Menu accordéon</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <div class="icon-bar">
-        <a href="#" class="active"><i class="fa fa-home"></i></a>
-        <a href="#"><i class="fa fa-search"></i></a>
-        <a href="#"><i class="fa fa-envelope"></i></a>
-        <a href="#"><i class="fa fa-globe"></i></a>
-        <a href="#"><i class="fa fa-trash"></i></a>
+    <h2>Menu accordéon</h2>
+    <div class="accordion-nav">
+        <button class="accordion">Accueil</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam exercitationem voluptas quos iure consequatur recusandae impedit placeat nisi eaque culpa provident consequuntur, saepe laudantium corporis ratione illum sint odit facere?</p>
+        </div>
+        <button class="accordion">Présentation</button>
+        <div class="panel">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quia illo quisquam. Porro beatae blanditiis eveniet id ratione nihil odit iure distinctio accusantium nesciunt, laboriosam laudantium dolorem aliquam enim sit.</p>
+        </div>
+        <button class="accordion">Contact</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus odit doloremque laudantium earum molestiae consequuntur commodi ullam? Quod esse veritatis, assumenda laboriosam ab impedit quidem fuga neque magnam consectetur?</p>
+        </div>
     </div>
 </body>
 </html>

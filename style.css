@@ -1,25 +1,24 @@
-body {
-    margin: 0;
+.accordion {
+    font: gray;
+    color: rgb(59, 59, 59);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: 400ms;
 }
 
-.icon-bar {
-    width: 90px;
-    background: #555;
+.panel {
+    max-height: 0;
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 200ms ease-out;
 }
 
-.icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px 0;
-    color: white;
-    font-size: 36px;
-    transition: all 300ms ease;
-}
-
-.icon-bar a:hover {
-    background: #000;
-}
-
-.active {
-    background: #4caf50;
+.active, .accordion:hover {
+    background-color: rgb(131, 81, 81);
 }
