@@ -12,20 +12,26 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <h2>Menu accordéon</h2>
-    <div class="accordion-nav">
-        <button class="accordion">Accueil</button>
-        <div class="panel">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam exercitationem voluptas quos iure consequatur recusandae impedit placeat nisi eaque culpa provident consequuntur, saepe laudantium corporis ratione illum sint odit facere?</p>
-        </div>
-        <button class="accordion">Présentation</button>
-        <div class="panel">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quia illo quisquam. Porro beatae blanditiis eveniet id ratione nihil odit iure distinctio accusantium nesciunt, laboriosam laudantium dolorem aliquam enim sit.</p>
-        </div>
-        <button class="accordion">Contact</button>
-        <div class="panel">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus odit doloremque laudantium earum molestiae consequuntur commodi ullam? Quod esse veritatis, assumenda laboriosam ab impedit quidem fuga neque magnam consectetur?</p>
-        </div>
+    <div id="paris" class="tabcontent">
+        <h1>Paris</h1>
+        <p>Capitale de France.</p>
     </div>
+    <div id="london" class="tabcontent">
+        <h1>Londres</h1>
+        <p>Capitale d'Anglettere.</p>
+    </div>
+    <div id="tokyo" class="tabcontent">
+        <h1>Tokyo</h1>
+        <p>Capitale du Japon.</p>
+    </div>
+    <div id="oslo" class="tabcontent">
+        <h1>Oslo</h1>
+        <p>Capitale de la Norvège.</p>
+    </div>
+
+    <button id="defaultOpen" class="tablink" onclick="openCity('paris', this, 'darkgoldenrod')">Paris</button>
+    <button class="tablink" onclick="openCity('london', this, 'fuchsia')">Londres</button>
+    <button class="tablink" onclick="openCity('tokyo', this, 'green')">Tokyo</button>
+    <button class="tablink" onclick="openCity('oslo', this, 'rgb(0, 162, 255)')">Oslo</button>
 </body>
 </html>

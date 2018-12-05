@@ -1,17 +1,18 @@
-const btsAccordion = document.getElementsByClassName("accordion");
+function openCity(cityName, bt, color) {
+     let i, tabcontents, tablinks;
 
-for (let i = 0; i < btsAccordion.length; i++) {
-    const bt = btsAccordion[i];
-    bt.addEventListener("click", function() {
-       bt.classList.toggle("active");
-       const panel = bt.nextElementSibling;
-       if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-       } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-       }
-    }); 
+     tabcontents = document.getElementsByClassName("tabcontent");
+     for (i = 0; tabcontents.length > i; i++) {
+          tabcontents[i].style.display = "none";
+     }
+
+     tablinks = document.getElementsByClassName("tablink");
+     for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+     }
+
+     document.getElementById(cityName).style.display = "block";
+     bt.style.backgroundColor = color;
 }
 
-function toggleAccordion() {
-}
+document.getElementById("defaultOpen").click();

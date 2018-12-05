@@ -1,24 +1,26 @@
-.accordion {
-    font: gray;
-    color: rgb(59, 59, 59);
+#paris { background-color: darkgoldenrod; }
+#london { background-color: fuchsia; }
+#tokyo { background-color: green; }
+#oslo { background-color: rgb(0, 162, 255); }
+
+.tabcontent {
+    color: white;
+    padding: 50px;
+    text-align: center;
+    display: none;
+}
+
+.tablink {
+    background-color: #555;
+    color: #fff;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
     border: none;
-    outline: none;
-    font-size: 15px;
-    transition: 400ms;
+    float: left;
 }
 
-.panel {
-    max-height: 0;
-    padding: 0 18px;
-    background-color: white;
-    overflow: hidden;
-    transition: max-height 200ms ease-out;
-}
-
-.active, .accordion:hover {
-    background-color: rgb(131, 81, 81);
+.tablink:hover {
+    background-color: #777;
 }
