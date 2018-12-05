@@ -12,26 +12,18 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <div id="paris" class="tabcontent">
-        <h1>Paris</h1>
-        <p>Capitale de France.</p>
-    </div>
-    <div id="london" class="tabcontent">
-        <h1>Londres</h1>
-        <p>Capitale d'Anglettere.</p>
-    </div>
-    <div id="tokyo" class="tabcontent">
-        <h1>Tokyo</h1>
-        <p>Capitale du Japon.</p>
-    </div>
-    <div id="oslo" class="tabcontent">
-        <h1>Oslo</h1>
-        <p>Capitale de la Norvège.</p>
+    <div id="my-sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Au sujet de</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contacts</a>
     </div>
 
-    <button id="defaultOpen" class="tablink" onclick="openCity('paris', this, 'darkgoldenrod')">Paris</button>
-    <button class="tablink" onclick="openCity('london', this, 'fuchsia')">Londres</button>
-    <button class="tablink" onclick="openCity('tokyo', this, 'green')">Tokyo</button>
-    <button class="tablink" onclick="openCity('oslo', this, 'rgb(0, 162, 255)')">Oslo</button>
+    <span onclick="openNav()">open</span>
+
+    <div id="main">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima labore, reiciendis dicta dolore consequuntur explicabo ipsa obcaecati sunt incidunt deserunt mollitia ab earum molestiae nulla! Ea ullam esse consequatur eum.
+    </div>
 </body>
 </html>

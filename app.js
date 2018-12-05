@@ -1,18 +1,11 @@
-function openCity(cityName, bt, color) {
-     let i, tabcontents, tablinks;
-
-     tabcontents = document.getElementsByClassName("tabcontent");
-     for (i = 0; tabcontents.length > i; i++) {
-          tabcontents[i].style.display = "none";
-     }
-
-     tablinks = document.getElementsByClassName("tablink");
-     for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].style.backgroundColor = "";
-     }
-
-     document.getElementById(cityName).style.display = "block";
-     bt.style.backgroundColor = color;
+function openNav() {
+     document.getElementById("my-sidenav").style.width = "250px";
+     document.getElementById("main").style.marginLeft = "250px";
+     document.body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
 }
 
-document.getElementById("defaultOpen").click();
+function closeNav() {
+     document.getElementById("my-sidenav").style.width = "0";
+     document.getElementById("main").style.marginLeft = "0";
+     document.body.style.backgroundColor = "white";
+}
