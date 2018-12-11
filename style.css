@@ -8,9 +8,23 @@ body { transition: background-color 300ms; }
     top: 0;
     left: 0;
     background-color: #111;
+    background-color: rgba(17, 17, 17, 0.9);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 500ms;
+}
+
+.content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#maison {
+    color: green;
+    font-size: 25px;
 }
 
 .sidenav a {
