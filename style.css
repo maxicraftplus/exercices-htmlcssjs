@@ -1,27 +1,36 @@
-#navbar {
-    overflow: hidden;
-    background-color: #222;
+.dropdown {
+    display: inline-block;
+    position: relative;
 }
 
-#navbar a {
-    float: left;
+.dropdown:hover .dropdown-content {
     display: block;
-    color: #bbb;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
 }
 
-.content {
-    padding: 16px;
+.dropdown-bt {
+    background: darkgoldenrod;
+    color: black;
+    padding: 2px 15px;
+    border: 1px solid rgb(155, 114, 11);
+    border-radius: 5px;
 }
 
-.sticky {
-    position: fixed;
+.dropdown-content {
+    position: absolute;
     top: 0;
-    width: 100%;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+    display: none;
 }
 
-.sticky + .content {
-    padding-top: 60px;
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
 }
