@@ -1,37 +1,18 @@
-const slides = document.querySelectorAll(".slide");
-const dots = document.querySelectorAll(".dot")
-let slideIndex = 0;
+const modal = document.getElementById("modal");
+const img = document.getElementById("img1");
+const imgModal = document.querySelector(".modal-content");
+const titleModal = document.querySelector("#title");
+const btCloseModal = document.querySelector(".close");
 
-showSlide(slideIndex);
+img.addEventListener("click", openModal);
+btCloseModal.addEventListener("click", closeModal);
 
-function nextSlide(ns) {
-    showSlide(slideIndex+=ns);
+function openModal() {
+    modal.style.display = "block";
+    imgModal.src = img.src;
+    titleModal.innerHTML = img.alt;
 }
 
-function curentSlide(ns) {
-    slideIndex = ns;
-    showSlide(slideIndex);   
-}
-
-function showSlide(ns) {
-    if (ns > slides.length) {
-        slideIndex = 1;
-    }
-
-    if (ns < 1) {
-        slideIndex = slides.length;
-    }
-
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex-1].style.display= "block";
-    dots[slideIndex-1].className += " active";
-
-    console.log(slideIndex)
+function closeModal() {
+    modal.style.display = "none";
 }

@@ -10,31 +10,15 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <div class="slideshow-container">
-        <div class="slide fade">
-            <div class="number">1/3</div>
-            <img src="img/slide1.jpg" alt="">
-            <div class="title">titre 1</div>
-        </div>
-        <div class="slide fade">
-            <div class="number">2/3</div>
-            <img src="img/slide2.jpg" alt="">
-            <div class="title">titre 2</div>
-        </div>
-        <div class="slide fade">
-            <div class="number">3/3</div>
-            <img src="img/slide3.jpg" alt="">
-            <div class="title">titre 3</div>
-        </div> 
+    <h2>image modale</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti esse a iste ipsum velit pariatur, quis nulla dolores eius corporis repudiandae laborum commodi consectetur, eaque, voluptate quasi accusantium inventore tenetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, autem natus dolore magnam impedit nisi, alias ab ex voluptatem omnis tenetur numquam nulla sequi adipisci distinctio? Eligendi, labore similique!</p>
+    <img id="img1" src="img/maldives-1993704_1280.jpg" alt="Paysage">
 
-        <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
-        <a class="next" onclick="nextSlide(1)">&#10095;</a>
-    </div>
-    <br>
-    <div class="dots"> 
-        <span class="dot" onclick="curentSlide(1)"></span>
-        <span class="dot" onclick="curentSlide(2)"></span>
-        <span class="dot" onclick="curentSlide(3)"></span>
+    <div id="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="title"></div>
     </div>
 </body>
 </html>
