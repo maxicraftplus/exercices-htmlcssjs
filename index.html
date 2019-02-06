@@ -10,15 +10,44 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <h2>image modale</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti esse a iste ipsum velit pariatur, quis nulla dolores eius corporis repudiandae laborum commodi consectetur, eaque, voluptate quasi accusantium inventore tenetur?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, autem natus dolore magnam impedit nisi, alias ab ex voluptatem omnis tenetur numquam nulla sequi adipisci distinctio? Eligendi, labore similique!</p>
-    <img id="img1" src="img/maldives-1993704_1280.jpg" alt="Paysage">
+    <div class="row">
+        <div class="column"><img src="img/img1.jpg" onclick="openModal();currentSlides(1)" class="hover-shadow"></div>
+        <div class="column"><img src="img/img2.jpg" onclick="openModal();currentSlides(2)" class="hover-shadow"></div>
+        <div class="column"><img src="img/img3.jpg" onclick="openModal();currentSlides(3)" class="hover-shadow"></div>
+        <div class="column"><img src="img/img4.jpg" onclick="openModal();currentSlides(4)" class="hover-shadow"></div>
+    </div>
+    <div class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="slides">
+                <div class="number-text">1/4</div>
+                <img src="img/img1_wide.jpg">
+            </div>
+            <div class="slides">
+                <div class="number-text">2/4</div>
+                <img src="img/img2_wide.jpg">
+            </div>
+            <div class="slides">
+                <div class="number-text">3/4</div>
+                <img src="img/img3_wide.jpg">
+            </div>
+            <div class="slides">
+                <div class="number-text">4/4</div>
+                <img src="img/img4_wide.jpg">
+            </div>
 
-    <div id="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content">
-        <div id="title"></div>
+            <a onclick="plusSlide(-1)" class="prev">&#10094;</a>
+            <a onclick="plusSlide(1)" class="next">&#10095;</a>
+
+            <div class="caption-container">
+                <p class="caption"></p>
+            </div>
+
+            <div class="column"><img src="img/img1.jpg" class="demo" alt="titre1" onclick="currentSlides(1)"></div>
+            <div class="column"><img src="img/img2.jpg" class="demo" alt="titre2" onclick="currentSlides(2)"></div>
+            <div class="column"><img src="img/img3.jpg" class="demo" alt="titre3" onclick="currentSlides(3)"></div>
+            <div class="column"><img src="img/img4.jpg" class="demo" alt="titre4" onclick="currentSlides(4)"></div>
+        </div>
     </div>
 </body>
 </html>
